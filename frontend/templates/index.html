@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 50px;
+            font-size: 50px;
+            font-weight: 500px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            color: yellow;
+        }
+
+        .main1 {
+            margin: 20px;
+            align-items: center;
+            justify-content: center;
+            display:wrap;
+        }
+
+        body {
+            background-color: aqua;
+            display: wrap;
+            justify-content: center;
+            align-items: center;
+            /* font-size: 700px; */
+            /* font-family:Verdana; */
+        }
+        .result{
+            border: 2px solid black;
+            height: 80vw;
+            width: 80vw;
+
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/predict" method="POST" class="main-form">
+
+
+        <div class="main">Cancer Cell Classification</div>
+        <div class ="main1">
+            <!-- <center> -->
+                <!-- <pre> -->
+                <h2>Upload an Image</h2> <br>
+                <input type="file" accept="image/*" id="imageInput" / class="main2">
+                <!-- </pre> -->
+            </div>
+            <div class="main1"><input type="button" value="submit"></div>
+            <h2>Probability of the type of Cancer</h2>
+
+    </form>
+
+    <div class="result">
+        <h1>Prediction Result</h1>
+        
+        {{}}
+    </div>
+</body>
+
+</html>
